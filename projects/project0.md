@@ -208,7 +208,7 @@ You didnt push your changes to GitHub...
     - If you are on another version, run `opam switch 4.14.0`
     - If you get an error saying that switch is not currently installed, run `opam switch create 4.14.0`. (This may take a while. Please be patient)
       - While installing the new switch, if you get an error for `bwrap`, first remove the `.opam` directory using `rm -r ~/.opam` and then reinitialize opam by **disabling sanboxing** using `opam init --disable-sandboxing`. Type "n" when prompted to modify `~/.profile`. Once opam has been initialized, rerun `opam switch create 4.14.0`
-    - Run `eval $(opam env)`
+    - Run `eval $(opam env --switch=4.14.0)`
     - Ensure you are now on the correct version by running `ocaml -version`
 6. Install OCaml packages
     - Run `opam install gradescope_submit ocamlfind ounit utop dune qcheck`
@@ -244,7 +244,7 @@ Check the [Special macOS Instructions](#special-macos-instructions) to check if 
     - If you are on another version, run `opam switch 4.14.0`.  If you get an
       error saying that switch is not currently installed, run `opam switch
       create 4.14.0`. (This may take a while. Please be patient)
-    - Run `eval $(opam env)`
+    - Run `eval $(opam env --switch=4.14.0)`
     - Ensure you are now on the correct version by running `ocaml -version`
 5. Install OCaml packages
     - Run `opam update`
@@ -295,7 +295,7 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
     - We will be using OCaml version 4.14.X. Run `ocaml -version` to check which version is currently installed
     - If you are already on version 4.14.X, you can skip to #5
     - If you are on another version, run `opam switch 4.14.0`.  If you get an error saying that switch is not currently installed, run `opam switch create 4.14.0`. (This may take a while. Please be patient)
-    - Run `eval $(opam env)`
+    - Run `eval $(opam env --switch=4.14.0)`
     - Ensure you are now on the correct version by running `ocaml -version`
 4. Install OCaml packages
     - Run `opam install gradescope_submit ocamlfind ounit utop dune qcheck`
