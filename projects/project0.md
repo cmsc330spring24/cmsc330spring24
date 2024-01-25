@@ -79,7 +79,7 @@ have your GitHub account linked here, click the `Link a GitHub account` button a
 ### Checkout on GitHub Classroom
 
 **These steps apply to every project**
-1. [create your project repository](TODO //this is the ghc link) - you will have to do this for every project
+1. [create your project repository](https://classroom.github.com/a/QuDn_bJD) - you will have to do this for every project
 
 Next, you will need to clone this repository to your local filesystem.
 
