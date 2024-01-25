@@ -221,7 +221,7 @@ You didnt push your changes to GitHub...
       - If `echo $SHELL` gives `/bin/bash`, do `echo "export PATH=\"$HOME/.cargo/bin:$PATH\"" >> ~/.bashrc`
       - Restart your shell once you are done
     - Optional: install the [Clippy](https://doc.rust-lang.org/clippy/) lint tool with `rustup component add clippy`
-8. Jump back to [Link GitHub to Gradescope](#link-github-to-gradescope) to complete the remaining steps for this project.
+8. Jump back to [Set Up SSH Authentication](#set-up-ssh-authentication) to complete the remaining steps for this project.
 
 ### MacOS
 
@@ -258,7 +258,7 @@ Check the [Special macOS Instructions](#special-macos-instructions) to check if 
       - If `echo $SHELL` gives `/bin/bash`, do `echo "export PATH=\"$HOME/.cargo/bin:$PATH\"" >> ~/.bashrc`
       - Restart your shell once you are done
     - Optional: install the [Clippy](https://doc.rust-lang.org/clippy/) lint tool with `rustup component add clippy`
-7. Jump back to [Link GitHub to Gradescope](#link-github-to-gradescope) to complete the remaining steps for this project.
+7. Jump back to [Set Up SSH Authentication](#set-up-ssh-authentication) to complete the remaining steps for this project.
 
 #### Special MacOS Instructions
 
@@ -308,4 +308,4 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
       - If `echo $SHELL` gives `/bin/bash`, do `echo "export PATH=\"$HOME/.cargo/bin:$PATH\"" >> ~/.bashrc`
       - Restart your shell once you are done
     - Optional: install the [Clippy](https://doc.rust-lang.org/clippy/) lint tool with `rustup component add clippy`
-6. Jump back to [Link GitHub to Gradescope](#link-github-to-gradescope) to complete the remaining steps for this project.
+6. Jump back to [Set Up SSH Authentication](#set-up-ssh-authentication) to complete the remaining steps for this project.
