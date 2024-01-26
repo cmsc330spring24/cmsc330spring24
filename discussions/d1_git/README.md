@@ -24,7 +24,7 @@
 
 1. Make text file in the repository directory on your machine: `touch hello.txt`
 2. Add: `git add .` (the `.` after `git add` refers to the entire current directory, you can also add specific files/directories like so: `git add <file.txt>`)
-3. Commit: `git commit -m “Add new text file”`
+3. Commit: `git commit -m "Add new text file"`
 4. Push: `git push`
 
 
