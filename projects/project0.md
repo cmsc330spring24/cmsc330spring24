@@ -206,7 +206,7 @@ You didnt push your changes to GitHub...
 5. Initialize OCaml
     - Run `opam update`
     - We will be using OCaml version 4.14.X. Run `ocaml -version` to check which version is currently installed
-    - If you are already on 4.14.X, you can skip to #7
+    - If you are already on 4.14.X, you can skip to #6
     - If you are on another version, run `opam switch 4.14.0`
     - If you get an error saying that switch is not currently installed, run `opam switch create 4.14.0`. (This may take a while. Please be patient)
       - While installing the new switch, if you get an error for `bwrap`, first remove the `.opam` directory using `rm -r ~/.opam` and then reinitialize opam by **disabling sanboxing** using `opam init --disable-sandboxing`. Type "n" when prompted to modify `~/.profile`. Once opam has been initialized, rerun `opam switch create 4.14.0`
@@ -231,9 +231,10 @@ Check the [Special macOS Instructions](#special-macos-instructions) to check if 
 
 0. Update your operating system (optional but recommended)
 1. Install the Homebrew package manager (Updated in Fall 2021)
-    - Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+    - Run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` 
 2. Install the basic dependencies
     - Run `brew install ocaml opam openssl graphviz`
+      - if you get an error on running this command then it means that brew is currently not in your PATH. To add brew to your PATH run the command `eval "$(/opt/homebrew/bin/brew shellenv)"`
 3. Initialize the OCaml package manager
     - Run `opam init`
     - When prompted to modify `~/.zshrc` or `~/.bash_profile` (or similar file), type "y"
@@ -242,7 +243,7 @@ Check the [Special macOS Instructions](#special-macos-instructions) to check if 
     - Run `opam update`
     - We will be using OCaml version 4.14.X.  Run `ocaml -version` to check
       which version is currently installed
-    - If you are already on 4.14.X, you can skip to #7
+    - If you are already on 4.14.X, you can skip to #6
     - If you are on another version, run `opam switch 4.14.0`.  If you get an
       error saying that switch is not currently installed, run `opam switch
       create 4.14.0`. (This may take a while. Please be patient)
@@ -295,7 +296,7 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
 3. Initialize OCaml
     - Run `opam update`
     - We will be using OCaml version 4.14.X. Run `ocaml -version` to check which version is currently installed
-    - If you are already on version 4.14.X, you can skip to #5
+    - If you are already on version 4.14.X, you can skip to #4
     - If you are on another version, run `opam switch 4.14.0`.  If you get an error saying that switch is not currently installed, run `opam switch create 4.14.0`. (This may take a while. Please be patient)
     - Run `eval $(opam env --switch=4.14.0)`
     - Ensure you are now on the correct version by running `ocaml -version`
