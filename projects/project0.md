@@ -89,7 +89,7 @@ Next, you will need to clone this repository to your local filesystem.
   - Navigate to your 330 directory `cd ~/cmsc330spring24` 
   - Clone the project into your current directory `git clone git@github.com:cmsc330spring24/project0-YOUR_GITHUB_USERNAME` (you must edit the link with your github username)
 
-The files in the `project-0` folder will be used for the [Verifying Setup](#verifying-setup) section at the bottom.
+The files in the `project0` folder will be used for the [Verifying Setup](#verify-setup) section at the bottom.
 
 ### Submit to Gradescope
 
@@ -104,7 +104,7 @@ The `submit` command will pull your code from GitHub, not your local files. If y
 ### Verify Setup
 
 To verify that you have the correct versions installed, run 
-`public.sh` in this directory.  You should not get any errors.  
+`./public.sh` in this directory.  You should not get any errors.  
 
 *This will create a file called `p0.report`*.  **Push your changes onto GitHub.** Then, submit this file by running `submit` in 
 the project folder.  You will have to enter your credentials.  Alternatively, you can manually submit 
@@ -197,8 +197,8 @@ You didnt push your changes to GitHub...
     - Run `opam init --disable-sandboxing`
     - If it hangs at "Fetching repository information", press Enter. This may take a while. Please be patient
     - When prompted to modify `~/.profile` (or another file), type "n", but remember the filename
-    - Open `~/.profile` (or the file mentioned above) in your text editor
-    - Add the line `` eval `opam config env` `` (these are backticks, not single quotes)
+    - Open `~/.profile` (or the file mentioned above) in any text editor (eg. `nano` `code .` `vim` `emacs`)
+    - Add the line `` eval `opam config env` `` anywhere in the file (these are backticks, not single quotes)
     - Save the file
     - Run `source ~/.profile` (or the file you just edited)
 5. Initialize OCaml
@@ -286,8 +286,8 @@ These instructions assume you have a Debian-based system (e.g. Ubuntu).  If you 
     - Run `opam init`
     - If it hangs at "Fetching repository information" press Enter. (This may take a while. Please be patient)
     - When prompted to modify `~/.profile` (or another file), type "n", but remember the filename
-    - Open `~/.profile` (or the file mentioned above) in your text editor
-    - Add the line `` eval `opam config env` `` (these are backticks, not single quotes)
+    - Open `~/.profile` (or the file mentioned above) in a text editor (eg. `nano` `code .` `vim` `emacs`)
+    - Add the line `` eval `opam config env` `` anywhere in the file (these are backticks, not single quotes)
     - Save the file
     - Run `source ~/.profile` (or the file you just edited)
 3. Initialize OCaml
