@@ -17,8 +17,8 @@
 1. Navigate to Class GitHub (located on the [class page](https://bakalian.cs.umd.edu/330))
 1. Under **Project Links**, click on the project you want to initialize (i.e. **Project 0**)
 1. Accept the project
-1. `git clone <insert link to your repo here>`
-1. Go into your new repository: `cd <repo name>`
+1. `git clone git@github.com:cmsc330spring24/<PROJECT_NAME>`
+1. Go into your new repository: `cd <PROJECT_NAME>`
 
 ### Staging, Committing, and Pushing Changes
 
