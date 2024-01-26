@@ -14,8 +14,8 @@ This project is simply to get your system ready. Although you will "submit" this
     - [Set Up SSH Authentication](#set-up-ssh-authentication)
     - [Link GitHub to Gradescope](#link-github-to-gradescope)
     - [Checkout on GitHub Classroom](#checkout-on-github-classroom)
-    - [Submit to Gradescope](#submit-to-gradescope)
     - [Verify Setup](#verify-setup)
+    - [Submit to Gradescope](#submit-to-gradescope)
   - [Additional Information](#additional-information)
     - [Languages and Packages](#languages-and-packages)
     - [Visual Studio Code](#visual-studio-code)
@@ -93,6 +93,15 @@ Next, you will need to clone this repository to your local filesystem.
 
 The files in the `project0` folder will be used for the [Verifying Setup](#verify-setup) section at the bottom.
 
+### Verify Setup
+
+To verify that you have the correct versions installed, run 
+`./public.sh` in this directory.  You should not get any errors.  
+
+*This will create a file called `p0.report`*.  **Push your changes onto GitHub.** Then, submit this file by running `submit` in 
+the project folder.  You will have to enter your credentials.  Alternatively, you can manually submit 
+the file to Gradescope by uploading the p0.report file to the appropriate assignment.
+
 ### Submit to Gradescope
 
 Whenever you want to submit your project to Gradescope, you will need to push your latest code changes to your repo. Follow these steps to do so:
@@ -102,15 +111,6 @@ First, make sure all your changes are pushed to GitHub using the `git add`, `git
 Next, to submit your project, you can run `submit` from your project directory.
 
 The `submit` command will pull your code from GitHub, not your local files. If you do not push your changes to GitHub, they will not be uploaded to Gradescope.
-
-### Verify Setup
-
-To verify that you have the correct versions installed, run 
-`./public.sh` in this directory.  You should not get any errors.  
-
-*This will create a file called `p0.report`*.  **Push your changes onto GitHub.** Then, submit this file by running `submit` in 
-the project folder.  You will have to enter your credentials.  Alternatively, you can manually submit 
-the file to Gradescope by uploading the p0.report file to the appropriate assignment.
 
 ## Additional Information
 ### Languages and Packages
