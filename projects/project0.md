@@ -83,6 +83,8 @@ have your GitHub account linked here, click the `Link a GitHub account` button a
 
 Next, you will need to clone this repository to your local filesystem.
 
+**IMPORTANT INFO FOR WINDOWS USERS** Clone ALL projects into your WSL filesystem, NOT the windows filesystem. Your path should NOT start with `/mnt` you can get to the WSL filesystem using `cd ~`
+
 2. Open Terminal
 3. Create a directory for your 330 projects, I recommend `mkdir ~/cmsc330spring24`
 4. Clone project 0 into that directory
