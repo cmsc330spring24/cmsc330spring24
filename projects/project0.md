@@ -207,8 +207,8 @@ You didnt push your changes to GitHub...
     - Run `opam update`
     - We will be using OCaml version 4.14.X. Run `ocaml -version` to check which version is currently installed
     - If you are already on 4.14.X, you can skip to #6
-    - If you are on another version, run `opam switch 4.14.0`
-    - If you get an error saying that switch is not currently installed, run `opam switch create 4.14.0`. (This may take a while. Please be patient)
+    - If you are on another version, run `opam switch create 4.14.0` followed by `opam switch 4.14.0`
+      - This may take a while, so please be patient!
       - While installing the new switch, if you get an error for `bwrap`, first remove the `.opam` directory using `rm -r ~/.opam` and then reinitialize opam by **disabling sanboxing** using `opam init --disable-sandboxing`. Type "n" when prompted to modify `~/.profile`. Once opam has been initialized, rerun `opam switch create 4.14.0`
     - Run `eval $(opam env --switch=4.14.0)`
     - Ensure you are now on the correct version by running `ocaml -version`
