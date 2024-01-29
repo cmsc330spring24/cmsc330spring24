@@ -243,7 +243,7 @@ Check the [Special macOS Instructions](#special-macos-instructions) to check if 
     - Run `opam update`
     - We will be using OCaml version 4.14.X.  Run `ocaml -version` to check
       which version is currently installed
-    - If you are already on 4.14.X, you can skip to #6
+    - If you are already on 4.14.X, you can skip to #5
     - If you are on another version, run `opam switch 4.14.0`.  If you get an
       error saying that switch is not currently installed, run `opam switch
       create 4.14.0`. (This may take a while. Please be patient)
