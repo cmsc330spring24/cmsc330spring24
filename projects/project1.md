@@ -254,7 +254,7 @@ For the following functions, creating helper functions and/or using recursion is
 
 For this function, consider 0 as even. Assume `lst1` and `lst2` are the same length. Consider using functions you have written above as helpers.
 
-If you are having trouble understanding how this function works, we suggest to take a look at [this image](./jumping_tuples.png) and try to trace through the logic.
+If you are having trouble understanding how this function works, we suggest to take a look at [this image](./imgs/jumping_tuples.png) and try to trace through the logic.
 - **Examples**:
   ```ocaml
   jumping_tuples [(1, 2); (3, 4); (5, 6)] [(7, 8); (9, 10); (11, 12)] = [8; 3; 12; 1; 10; 5]
@@ -288,9 +288,8 @@ of
 # Part 4: Higher Order Functions
 
 Write the following functions using `map`, `fold`, or `fold_right` as defined in the file `funs.ml`. You **must** use `map`, `fold`, or `fold_right` to complete these functions, so none of the functions in Part 4 may be defined using the `rec` keyword. 
-- You also may not create recursive helper functions, You will lose points if this rule is not followed. 
-- You **may use any previous functions from this project**, such as `zip`. 
-- You **may create non-recursive helper functions** as you see fit for all of part 4.
+- You also **may not** create *recursive helper functions*, You will lose points if this rule is not followed. 
+- You **may** create *non-recursive helper functions* as you see fit for all of part 4.
 
 #### `is_there lst x`
 
