@@ -322,9 +322,9 @@ Write the following functions using `map`, `fold`, or `fold_right` as defined in
 - **Description**: Given a list, returns a list with all duplicate elements removed. *Order does not matter, in the output list.*
 - **Examples**:
   ```ocaml
-  assert(uniq [] = []);;
-  assert(uniq [1] = [1]);;
-  assert(uniq [1; 2; 2; 1; 3] = [2; 1; 3]);;
+  uniq [] = []
+  uniq [1] = [1]
+  uniq [1; 2; 2; 1; 3] = [2; 1; 3]
   ```
 
 #### `every_xth x lst`
