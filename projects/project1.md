@@ -251,10 +251,10 @@ For the following functions, creating helper functions and/or using recursion is
 - **Description**: Given two lists of equal length of two element tuples, `lst1` and `lst2`, return a list based on the following conditions:
   + The first half of the list should be the first element of every odd indexed tuple in `lst1`, and the second element of every even indexed tuple in `lst2`, interwoven together (starting from index 0). 
   + The second half of the list should be the the first element of every even indexed tuple in `lst1`, and the second element of every odd indexed tuple in `lst2`, interwoven together (starting from index 0). 
+- **Assumptions**: `lst1` and `lst2` are the same length.
 
-For this function, consider 0 as even. Assume `lst1` and `lst2` are the same length. Consider using functions you have written above as helpers.
+Consider using functions you have written above as helpers.
 
-If you are having trouble understanding how this function works, we suggest to take a look at [this image](./imgs/jumping_tuples.png) and try to trace through the logic.
 - **Examples**:
   ```ocaml
   jumping_tuples [(1, 2); (3, 4); (5, 6)] [(7, 8); (9, 10); (11, 12)] = [8; 3; 12; 1; 10; 5]
@@ -262,6 +262,9 @@ If you are having trouble understanding how this function works, we suggest to t
   jumping_tuples [("first", "second"); ("third", "fourth")] [("fifth", "sixth"); ("seventh", "eighth")] = ["sixth"; "third"; "first"; "eighth"]
   jumping_tuples [] [] = []
   ```
+
+Here's an image that shows the jumping logic for the first example from above:
+![jumping tuples example](./imgs/jumping_tuples.png)
 
 #### `max_func_chain init funcs`
 - **Type**: `'a -> ('a -> 'a) list -> 'a`
