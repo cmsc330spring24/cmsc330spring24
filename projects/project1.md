@@ -82,6 +82,7 @@ Implement the following functions that do not require recursion. Accordingly, th
 
 - **Type**: `int -> int`
 - **Description**: Returns the absolute value of `x`.
+- **Restrictions**: Do not use the `abs` function from stdlib.
 - **Examples**:
    ```ocaml
    abs 1 = 1
