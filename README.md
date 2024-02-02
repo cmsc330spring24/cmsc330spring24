@@ -7,5 +7,6 @@
     
 ### Discussion links
   + [Discussion 1](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d1_git)
+  + [Discussion 2](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d2_ocaml_typing)
 
 ### Other links
