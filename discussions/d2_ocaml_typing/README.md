@@ -4,6 +4,7 @@
 
 1. Quiz 1 next **Friday, February 9th**
    1. Quizzes are 30 minutes long, and will start 10 minutes into discussion
+   2. Please see [@142](https://piazza.com/class/lrf5qvp042i1y2/post/142) for more information about quiz topics/logistics
 3. Project 1 due **Sunday, February 11th @ 11:59 PM**
 4. Quiz & Exam makeup policy: [@85](https://piazza.com/class/lrf5qvp042i1y2/post/85)
    1. Quiz makeups are held the **Tuesday** immediately following a quiz in **IRB 5165**
