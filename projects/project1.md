@@ -27,7 +27,7 @@ The project will include the following types of tests:
 You should test your project in the following ways:
 
 1. Run the public tests. These tests are the same as those on gradescope.
-2. Write student tests in `test/student/student/ml` to best predict what you think the non-public tests are. You can use the public tests as a template
+2. Write student tests in `test/student/student.ml` to best predict what you think the non-public tests are. You can use the public tests as a template
 
 Relying on gradescope for testing is poor practice and not recommended. Additionally, staff cannot tell you what the semipublic and secret tests are.  
 
