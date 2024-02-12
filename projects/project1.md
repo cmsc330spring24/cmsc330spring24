@@ -294,6 +294,7 @@ of
 Write the following functions using `map`, `fold`, or `fold_right` as defined in the file `funs.ml`. You **must** use `map`, `fold`, or `fold_right` to complete these functions, so none of the functions in Part 4 may be defined using the `rec` keyword. 
 - You also **may not** create *recursive helper functions*, You will lose points if this rule is not followed. 
 - You **may** create *non-recursive helper functions* as you see fit for all of part 4.
+- You **may** use functions created in previous parts, as long as they **do not use recursion**.
 
 #### `is_there lst x`
 
