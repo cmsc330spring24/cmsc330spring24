@@ -137,12 +137,10 @@ Other examples of valid `condition`s are:
  - **Examples**:
   ```ocaml
   let db1 = insert {name="Alice"; age=23; hobbies=["Skiing"; "golfing"]} newDatabase
-
   let db2 = insert {name="Bob"; age=42; hobbies=["Skiing"; "Cooking"; "Legos"]} db1
 
   query condition1 db2 = [{name="Bob";age=42;hobbies=["Skiing";"Cooking"; "Legos"]}]
-
-  query True db2 = db2
+  query True db2 = (* person list of all entries in db2 *)
   query False db2 = []
   ```
    
