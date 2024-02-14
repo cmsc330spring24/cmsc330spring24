@@ -1,5 +1,5 @@
 # Project 2: HOFs on trees & Database design
-Due: March 12th 11:59 PM (Late: March 13th 11:59 PM)
+Due: Tuesday, Feburary 27 11:59 PM (Late: Wednesday, Feburary 28 11:59 PM)
 
 Points: 40% public, 30% semipublic, 30% secret
 
