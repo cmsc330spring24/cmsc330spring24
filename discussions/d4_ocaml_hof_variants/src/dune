@@ -1,0 +1,8 @@
+(library
+ (name exercises)
+ (modules exercises))
+
+(env
+ (dev
+  (flags
+   (:standard -w -A))))
