@@ -3,7 +3,8 @@
 ## Reminders
 
 1. Quiz 2 next **Friday, February 23rd**
-2. Project 2 released, due **February 27th @ 11:59 PM**
+   1. More info: [@409](https://piazza.com/class/lrf5qvp042i1y2/post/409)
+3. Project 2 released, due **February 27th @ 11:59 PM**
    1. More info + FAQs: [@384](https://piazza.com/class/lrf5qvp042i1y2/post/384)
 
 ## Notes
