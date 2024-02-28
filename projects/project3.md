@@ -1,4 +1,4 @@
-# Project 5: Regular Expression Engine
+# Project 3: Regular Expression Engine
 
 Due: Friday, March 15th 11:59 PM (Late: Saturday, March 16th 11:59 PM)
 
