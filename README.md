@@ -13,5 +13,6 @@
   + [Discussion 3](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d3_ocaml_quiz)
   + [Discussion 4](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d4_ocaml_hof_variants)
   + [Discussion 5](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d5_ocaml_quiz2)
+  + [Discussion 6](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d6_nfa_dfa)
 
 ### Other links
