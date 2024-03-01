@@ -2,15 +2,19 @@
 
 ## Reminders
 
+1. **Discussion Extra Credit! 🥳**
+   1. This is optional
+   2. More info can be found at [@695](https://piazza.com/class/lrf5qvp042i1y2/post/695)
+   3. If you participate, make sure to stay back after discussion to make sure your name is recorded!
 1. Exam 1 on **March 5th**
    1. Topic list: [@603](https://piazza.com/class/lrf5qvp042i1y2/post/603)
    2. TA Review Session on **March 4th @ 6PM** at **IRB0324 and Zoom** [@604](https://piazza.com/class/lrf5qvp042i1y2/post/604)
-2. Project 3 due **March 15th @ 11:59 PM**
-3. Office Hours Reminders: [@663](https://piazza.com/class/lrf5qvp042i1y2/post/663) and [@661](https://piazza.com/class/lrf5qvp042i1y2/post/661)
+1. Project 3 due **March 15th @ 11:59 PM**
+1. Office Hours Reminders: [@663](https://piazza.com/class/lrf5qvp042i1y2/post/663) and [@661](https://piazza.com/class/lrf5qvp042i1y2/post/661)
    1. Be respectful to TAs
    2. Do not camp out in OH space
    3. Be mindful of personal hygiene
-4. Academic Dishonesty Reminder: [@662](https://piazza.com/class/lrf5qvp042i1y2/post/662)
+1. Academic Dishonesty Reminder: [@662](https://piazza.com/class/lrf5qvp042i1y2/post/662)
    1. Do not share code or discuss implementation details
    2. Academic dishonesty can result in getting an XF in the class
 
