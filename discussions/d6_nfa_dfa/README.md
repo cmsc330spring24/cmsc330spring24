@@ -29,7 +29,8 @@
 
 ### Conversion Algorithm
 
-Input $\text{NFA}(\sigma, Q, q_0, F_n, \delta)$, Output $\text{DFA}(\sigma, R, r_0, F_d, \delta')$ \
+Input: $\text{NFA}(\Sigma, Q, q_0, F_n, \delta)$ \
+Output: $\text{DFA}(\Sigma, R, r_0, F_d, \delta')$ \
 Let $r_0$ = $\varepsilon\text{-closure}(\delta, q_0)$, add it to $R$\
 While $\exists$ an unmarked state $r \in R$:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mark $r$\
