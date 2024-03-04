@@ -1,13 +1,13 @@
 
 # CMSC330 Spring 2024
 
-### Project links
+## Project links
   + [Project 0](https://classroom.github.com/a/QuDn_bJD) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project0.md))
   + [Project 1](https://classroom.github.com/a/3QN1DLyQ) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project1.md))
   + [Project 2](https://classroom.github.com/a/sN5mJvQk) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project2.md))
   + [Project 3](https://classroom.github.com/a/saUIBPo1) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project3.md))
     
-### Discussion links
+## Discussion links
   + [Discussion 1](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d1_git)
   + [Discussion 2](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d2_ocaml_typing)
   + [Discussion 3](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d3_ocaml_quiz)
@@ -15,4 +15,7 @@
   + [Discussion 5](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d5_ocaml_quiz2)
   + [Discussion 6](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d6_nfa_dfa)
 
-### Other links
+## Additional Resources
+  + [OCaml Problem Generator - Type to Expr](https://nmittu.github.io/330-problem-generator/type_of_expr.html)
+  + [OCaml Problem Generator - Expr to Type](https://nmittu.github.io/330-problem-generator/expr_of_type.html)
+  + [GitHub - Anwar's Lecture Material](https://github.com/anwarmamat/cmsc330spring2024/tree/main)
