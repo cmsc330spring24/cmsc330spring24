@@ -152,28 +152,28 @@
 
 ### PROBLEMS 
 1)
-<img width="635" alt="Screenshot 2024-03-03 at 11 12 25 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/98f735e7-c761-49f6-a8b0-abbf63e2a747">
+<img width="635" alt="Screenshot 2024-03-03 at 11 12 25 PM" src="./imgs/98f735e7-c761-49f6-a8b0-abbf63e2a747.png">
 
 2)
-<img width="626" alt="Screenshot 2024-03-03 at 11 12 45 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/6985b60e-04b5-4d4d-9793-54a499c6afac">
+<img width="626" alt="Screenshot 2024-03-03 at 11 12 45 PM" src="./imgs/6985b60e-04b5-4d4d-9793-54a499c6afac.png">
 
 3)
-<img width="802" alt="Screenshot 2024-03-03 at 11 13 50 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/823732ae-3459-40d4-9a81-3420429dd814">
+<img width="802" alt="Screenshot 2024-03-03 at 11 13 50 PM" src="./imgs/823732ae-3459-40d4-9a81-3420429dd814.png">
 
 4) 
-<img width="704" alt="Screenshot 2024-03-03 at 11 14 17 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/2e3f7421-5429-4907-82de-3d84fc1123a2">
+<img width="704" alt="Screenshot 2024-03-03 at 11 14 17 PM" src="./imgs/2e3f7421-5429-4907-82de-3d84fc1123a2.png">
 
 5)
-<img width="785" alt="Screenshot 2024-03-03 at 11 15 38 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/e5cb795f-60a1-42aa-86df-9d1a775bd39d">
+<img width="785" alt="Screenshot 2024-03-03 at 11 15 38 PM" src="./imgs/e5cb795f-60a1-42aa-86df-9d1a775bd39d.png">
 
 6)
-<img width="797" alt="Screenshot 2024-03-03 at 11 15 52 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/7ff12935-6b11-446b-8390-5cf0891e51f8">
+<img width="797" alt="Screenshot 2024-03-03 at 11 15 52 PM" src="./imgs/7ff12935-6b11-446b-8390-5cf0891e51f8.png">
 
 7) Make this a regex to nfa problem
-<img width="797" alt="Screenshot 2024-03-03 at 11 15 52 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/f334523d-e957-4f5d-ac01-232eed8eb2fe">
+<img width="797" alt="Screenshot 2024-03-03 at 11 15 52 PM" src="./imgs/f334523d-e957-4f5d-ac01-232eed8eb2fe.png">
 
 8) Make this a regex to nfa problem
-<img width="657" alt="Screenshot 2024-03-03 at 11 16 15 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/ab03455b-0b7b-4735-b127-050ead3f632b">
+<img width="657" alt="Screenshot 2024-03-03 at 11 16 15 PM" src="./imgs/ab03455b-0b7b-4735-b127-050ead3f632b.png">
 
 9) 
-<img width="687" alt="Screenshot 2024-03-03 at 11 17 09 PM" src="https://github.com/umd-cmsc330/spring24-ta/assets/100861119/d07a9ef3-e5eb-4d93-aca0-fa7084a41241">
+<img width="687" alt="Screenshot 2024-03-03 at 11 17 09 PM" src="./imgs/d07a9ef3-e5eb-4d93-aca0-fa7084a41241.png">
