@@ -131,24 +131,24 @@
 ### ε-closure
  - **Function that returns us a set of all the states that we can visit from our current state just using the ε-transition.**
     - **This means that we can only move from one state to another using ε-transitions and no other symbol**
-    ![IMG_06454F32841E-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/6e35a89b-852b-4e70-904a-59b62eaf8571)
+    ![IMG_06454F32841E-1 (1)](./imgs/6e35a89b-852b-4e70-904a-59b62eaf8571.png)
 
 ### move
  - **Function that returns us a set of all possible states which we can reach from our current state using the specified symbol**
     - **The move call is done only once unlike e-closure!**
-    ![IMG_97532BCB6B36-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/d1624135-0d6f-4866-8a08-56e87db3670b)
+    ![IMG_97532BCB6B36-1 (1)](./imgs/d1624135-0d6f-4866-8a08-56e87db3670b.png)
 
 ### REGEX TO NFA
-![IMG_52724B54B9A9-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/39cc426f-3928-48bc-b4b2-30cff10a61cc)
-![IMG_29553EDBEF31-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/5ab52f09-e7c7-4309-bf3b-5d23746ab998)
-![IMG_9950FF5DEE1E-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/0467aad3-26b3-4100-9d4f-c0ba89918b55)
+![IMG_52724B54B9A9-1 (1)](./imgs/39cc426f-3928-48bc-b4b2-30cff10a61cc.png)
+![IMG_29553EDBEF31-1 (1)](./imgs/5ab52f09-e7c7-4309-bf3b-5d23746ab998.png)
+![IMG_9950FF5DEE1E-1 (1)](./imgs/0467aad3-26b3-4100-9d4f-c0ba89918b55.png)
 
 ### NFA TO DFA
-![IMG_CFF04C1D6E3E-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/1104a5c3-82b9-431d-b923-d0d50381cef6)
-![IMG_5BC43489E47A-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/f91580a2-abd3-4aaf-8b74-a6c60967d719)
-![IMG_01C46859F9B2-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/9c7ec315-4760-4570-9fc3-07b3857ba65f)
-![IMG_702CCE92D9D9-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/57ca9161-5688-43dc-81f6-43f1f86b2a31)
-![IMG_14E884807F97-1 (1)](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/0eeab337-a277-4d24-b0fd-934eba44a589)
+![IMG_CFF04C1D6E3E-1 (1)](./imgs/1104a5c3-82b9-431d-b923-d0d50381cef6.png)
+![IMG_5BC43489E47A-1 (1)](./imgs/f91580a2-abd3-4aaf-8b74-a6c60967d719.png)
+![IMG_01C46859F9B2-1 (1)](./imgs/9c7ec315-4760-4570-9fc3-07b3857ba65f.png)
+![IMG_702CCE92D9D9-1 (1)](./imgs/57ca9161-5688-43dc-81f6-43f1f86b2a31.png)
+![IMG_14E884807F97-1 (1)](./imgs/0eeab337-a277-4d24-b0fd-934eba44a589.png)
 
 ### PROBLEMS 
 1)
