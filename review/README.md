@@ -102,7 +102,7 @@
     ```
 ## Finite State Machines, NFA-DFA (40 mins)
 ### GENERAL IMPORTANT POINTS 
- 1) **Every NFA is a DFA but not every DFA is a NFA**
+ 1) **Every DFA is a NFA but not every NFA is a DFA**
     - NFA’s have epsilon transitions which are not present in a DFA
  2) **It is not always going to be the case that we have to consume some form of a symbol when moving from one state to another**
  3) **Move and e-closure on a state will not always return the same result**
