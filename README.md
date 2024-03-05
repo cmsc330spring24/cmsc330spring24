@@ -15,6 +15,9 @@
   + [Discussion 5](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d5_ocaml_quiz2)
   + [Discussion 6](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d6_nfa_dfa)
 
+## Review session links
+  + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/review/review1.md)
+
 ## Additional Resources
   + [OCaml Problem Generator - Type to Expr](https://nmittu.github.io/330-problem-generator/type_of_expr.html)
   + [OCaml Problem Generator - Expr to Type](https://nmittu.github.io/330-problem-generator/expr_of_type.html)
