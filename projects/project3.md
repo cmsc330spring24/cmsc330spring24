@@ -2,7 +2,7 @@
 
 Due: Friday, March 15th 11:59 PM (Late: Saturday, March 16th 11:59 PM)
 
-Points: 35 public, 65 semipublic
+Points: 35 public, 35 semipublic, 30 secret
 
 **This is an individual assignment. You must work on this project alone.**
 
