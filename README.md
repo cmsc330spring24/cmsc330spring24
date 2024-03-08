@@ -14,6 +14,7 @@
   + [Discussion 4](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d4_ocaml_hof_variants)
   + [Discussion 5](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d5_ocaml_quiz2)
   + [Discussion 6](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d6_nfa_dfa)
+  + [Discussion 7](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d7_cfg)
 
 ## Review session links
   + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/review/review1.md)
