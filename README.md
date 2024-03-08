@@ -8,13 +8,13 @@
   + [Project 3](https://classroom.github.com/a/saUIBPo1) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project3.md))
     
 ## Discussion links
-  + [Discussion 1](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d1_git)
-  + [Discussion 2](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d2_ocaml_typing)
-  + [Discussion 3](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d3_ocaml_quiz)
-  + [Discussion 4](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d4_ocaml_hof_variants)
-  + [Discussion 5](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d5_ocaml_quiz2)
-  + [Discussion 6](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d6_nfa_dfa)
-  + [Discussion 7](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d7_cfg)
+  + [Discussion 1 - Introduction to Git](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d1_git)
+  + [Discussion 2 - OCaml Typing](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d2_ocaml_typing)
+  + [Discussion 3 - Quiz #1](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d3_ocaml_quiz)
+  + [Discussion 4 - OCaml HOFs + Variants](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d4_ocaml_hof_variants)
+  + [Discussion 5 - Quiz #2](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d5_ocaml_quiz2)
+  + [Discussion 6 - NFA to DFA](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d6_nfa_dfa)
+  + [Discussion 7 - CFGs](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d7_cfg)
 
 ## Review session links
   + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/review/review1.md)
