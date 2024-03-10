@@ -3,10 +3,7 @@
 ## Reminders
 
 1. Project 3 due **Friday, March 15th @ 11:59 PM**
-2. Buy your [Fart Club](https://fartclub.aspear.net/shirts) shirt **by 11:59 tonight**
-
-      <img width="20%" alt="image" src="https://images-ext-1.discordapp.net/external/LAPgNNSUjcR4VqWH6p1ZcHAcind_ZjGIf_DW7ZQ-5OY/https/lh6.googleusercontent.com/evPf1FHqiHlF5uBMnyJ2JHxF0HYnA4Qy4udAYFcYBagxghWN7lj_zXSxoABugSNYVJPMhQZjanSnMb1A5FUaWVpmzzeHalE_ipkaWJbvy1Uuizq5o-eantYAXZCjcZqwHw%3Dw740">
-
+   
 ## Notes
 
 ### Context Free Grammars
