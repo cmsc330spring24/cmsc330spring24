@@ -1,0 +1,7 @@
+(library
+  (name d8)
+  (modules lexer parser interpreter)
+  (libraries str))
+(env
+  (dev
+      (flags (:standard -w -27-39-33-32))))
