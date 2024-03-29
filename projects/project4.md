@@ -1,7 +1,7 @@
 # Project 4: MicroCaml Lexer, Parser, and Interpreter
 Due: April 9th, 2024, 11:59PM (Late: April 10th, 2024, 11:59PM)
 
-Points: TBD
+Points: 50 public, 50 semipublic
 
 ## Introduction
 
