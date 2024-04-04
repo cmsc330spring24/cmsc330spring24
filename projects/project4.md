@@ -745,10 +745,10 @@ For a `Def`, we evaluate its `expr` in the given environment, but with a placeho
 eval_mutop [] (Def ("x", (Bool(true)))) =  ([("x", {contents = Bool true})], Some (Bool true))
 ```
 ```ocaml
-eval_mutop [] Def ("f",
+eval_mutop [] (Def ("f",
   Fun ("y",
     If (Binop (Equal, ID "y", (Int 0)), (Int 1),
-    App (ID "f", Binop (Sub, ID "y", (Int 1)))))) =
+    App (ID "f", Binop (Sub, ID "y", (Int 1))))))) =
 ([("f",
   {contents =
     Closure (<cycle>, "y",
