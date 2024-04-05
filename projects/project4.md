@@ -247,7 +247,7 @@ The CFG below describes the language of MicroCaml expressions. This CFG is right
 - ConcatExpr -> UnaryExpr `^` ConcatExpr | UnaryExpr
 - UnaryExpr -> `not` UnaryExpr | AppExpr
 - AppExpr -> SelectExpr PrimaryExpr | SelectExpr
-- SelectExpr -> PrimaryExpr `.` `Tok_ID` | PrimaryExpr
+- SelectExpr -> PrimaryExpr `.` *`Tok_ID`* | PrimaryExpr
 - PrimaryExpr -> *`Tok_Int`* | *`Tok_Bool`* | *`Tok_String`* | *`Tok_ID`* | `(` Expr `)`| RecordExpr 
 - RecordExpr -> `{` RecordBodyExpr `}` | `{` `}`
 - RecordBodyExpr -> *`Tok_ID`* `=` Expr `;` RecordBodyExpr | *`Tok_ID`* `=` Expr
