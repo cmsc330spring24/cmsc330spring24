@@ -31,6 +31,6 @@ Using the rules given above, show that the following statements are **well typed
 
 ## Additional Readings & Resources
 
+- [Professor Mamat's Operational Semantics Slides](https://bakalian.cs.umd.edu/assets/slides/17-semantics.pdf)
 - [Professor Mamat's Type Checking Slides](https://bakalian.cs.umd.edu/assets/slides/19-Typechecking.pdf)
-- [Spring 2021 - Operational Semantics Slides](https://www.cs.umd.edu/class/spring2021/cmsc330/lectures/21-semantics.pdf)
 - [Fall 2022 - Discussion 10 (Operational Semantics)](https://github.com/umd-cmsc330/fall2022/tree/main/discussions/discussion10#operational-semantics)
