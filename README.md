@@ -17,6 +17,8 @@
   + [Discussion 6 - NFA to DFA](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d6_nfa_dfa)
   + [Discussion 7 - CFGs](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d7_cfg)
   + [Discussion 8 - Lexing, Parsing, & Interpreting](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d8_parsing)
+  + Discussion 9 - Quiz #3 (no readme)
+  + [Discussion 10 - Operational Semantics & Type Checking](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d10_opsem)
 
 ## Review session links
   + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/review/review1.md)
