@@ -13,9 +13,9 @@
 ## Type Checking
 <details>
   <summary>1</summary>
-  <img src="sols/type1_sol.jpeg" />
+  <img src="sols/type1_sol.png" />
 </details>
 <details>
   <summary>2</summary>
-  <img src="sols/type2_sol.jpeg" />
+  <img src="sols/type2_sol.png" />
 </details>
