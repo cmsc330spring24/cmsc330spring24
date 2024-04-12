@@ -321,7 +321,7 @@ exception DivByZeroError
 * A `DivByZeroError` happens on attempted division by zero in the optimizer.
 
 > [!NOTE]
-> We do not enforce what messages you use when raising a `TypeError` or `SelectError`. That's up to you.
+> We do not enforce what messages you use when raising a `TypeError`, `DeclareError`, or `SelectError`. That's up to you.
 
 ### Ground Rules and Extra Info
 
