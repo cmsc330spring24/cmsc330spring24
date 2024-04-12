@@ -11,6 +11,13 @@ In project 4, you implemented MicroCaml — a *dynamically-typed* version of OCa
 * An **optimizer** for MicroCaml, which simplifies the MicroCaml AST using constant folding and constant propagation
 * A **type checker** for MicroCaml, which verifies if a MicroCaml expression is well-typed before we run the code. If an expression passes the type checker, it will not cause type error when it runs.
 
+> [!IMPORTANT]
+> In order to utilize some of the new functionality built in to this project, you must install the following `opam` package(s):
+> 
+> ```sh
+> opam install ppx_deriving
+> ```
+
 ## Part (A): AST optimization
 
 In the first part of this project, you will implement a function `optimize : expr environment -> expr -> expr`,  which can partially evaluate and simplify the AST, using the following optimizations:
@@ -52,9 +59,10 @@ You can assume all ASTs are well-typed and will not cause an error during the op
 Your optimizer should evaluate as much as possible. For many programs, it will be able to optimize the AST down
 to just a single node containing the value returned after running the program.
 
-### How is this optimization different from the evaluator in Project 4?
-
-During evaluation, all variables are bound at some point (i.e. you can lookup the value of a variable in the environment). In the optimizer, variables may not be bound, but you'd still want to evaluate the expression as much as possible. For example, the optimizer will optimize `fun x-> 1+2+3+4+x` to `fun 10+x`, whereas the evaluator will evaluate it a closure with the body of the function unmodified.
+> [!NOTE]
+> **How is this optimization different from the evaluator in Project 4?**
+> 
+> During evaluation, all variables are bound at some point (i.e. you can lookup the value of a variable in the environment). In the optimizer, variables may not be bound, but you'd still want to evaluate the expression as much as possible. For example, the optimizer will optimize `fun x-> 1+2+3+4+x` to `fun 10+x`, whereas the evaluator will evaluate it a closure with the body of the function unmodified.
 
 ### More examples of programs after optimization
 
@@ -312,7 +320,8 @@ exception DivByZeroError
 * A `SelectError` happens when the typechecker is unable to select on a record when the key does not exist in the record.
 * A `DivByZeroError` happens on attempted division by zero in the optimizer.
 
-Note that we do not enforce what messages you use when raising a `TypeError` or `SelectError`. That's up to you.
+> [!NOTE]
+> We do not enforce what messages you use when raising a `TypeError` or `SelectError`. That's up to you.
 
 ### Ground Rules and Extra Info
 
