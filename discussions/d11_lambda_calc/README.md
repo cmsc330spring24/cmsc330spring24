@@ -2,7 +2,8 @@
 
 ## Reminders
 
-- Project 5 released, due **TBD**
+- Project 5 released, due **Tuesday, April 23rd at 11:59 PM**
+  - FAQ & Details: [@1712](https://piazza.com/class/lrf5qvp042i1y2/post/1712)
 
 ## Lambda Calculus Notes
 
