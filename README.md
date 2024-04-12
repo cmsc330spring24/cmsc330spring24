@@ -20,6 +20,7 @@
   + [Discussion 8 - Lexing, Parsing, & Interpreting](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d8_parsing)
   + Discussion 9 - Quiz #3 (no readme)
   + [Discussion 10 - Operational Semantics & Type Checking](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d10_opsem)
+  + [Discussion 11 - Lambda Calculus](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d11_lambda_calc)
 
 ## Review session links
   + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/review/review1.md)
