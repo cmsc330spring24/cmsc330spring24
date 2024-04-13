@@ -36,6 +36,9 @@ Constant folding can make use of arithmetic identities. For example:
 * If `x` is numeric, the value of `1 * x` is `x`.
 
 Note that there are more arithmetic identities you should implement. These are just a few!
+However, do not implement commutative property and distributive property.
+
+For example, `1 + 2 + x + 3` should be optimized to `3 + x + 3` and `2*x + 3*x` should remain the same.
 
 ### Constant propagation
 
@@ -98,7 +101,6 @@ type op =
   | Sub
   | Mult
   | Div
-  | Concat
   | Greater
   | Less
   | GreaterEqual
