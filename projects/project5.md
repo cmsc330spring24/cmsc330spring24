@@ -37,9 +37,6 @@ Constant folding can make use of arithmetic identities. For example:
 
 Note that there are more arithmetic identities you should implement. These are just a few!
 
-* `1 + 2 + x + 3` should be optimized to `3 + x + 3`.
-* `2 * x + 3 * x` should remain the same.
-
 ### Constant propagation
 
 Constant propagation is the process of substituting the values of known constants in expressions. In MicroCaml such constants include the int and boolean literals. Consider the following pseudocode:
@@ -77,6 +74,10 @@ optimize [] (parse_expr "fun x:(Int -> Int) -> if true then (x 1) else 1") = Fun
 optimize [] (parse_expr "{a=100;b=200}.a") = Int 100
 
 optimize [] (parse_expr "{a=100+200;b=200}") = Record [(Lab "a", Int 300); (Lab "b", Int 200)]
+
+optimize [] (parse_expr "1 + 2 + x + 3") = Binop (Add, Binop (Add, Int 3, ID "x"), Int 3)
+
+optimize [] (parse_expr "2 * x + 3 * x") = Binop (Add, Binop (Mult, Int 2, ID "x"), Binop (Mult, Int 3, ID "x"))
 
 optimize [] (parse_expr ("0 * (1/0)")) 
 (* Exception: DivByZeroError *)
