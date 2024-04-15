@@ -79,6 +79,17 @@ optimize [] (parse_expr "1 + 2 + x + 3") = Binop (Add, Binop (Add, Int 3, ID "x"
 
 optimize [] (parse_expr "2 * x + 3 * x") = Binop (Add, Binop (Mult, Int 2, ID "x"), Binop (Mult, Int 3, ID "x"))
 
+optimize [] (parse_expr "let rec f:(Int->Int) = fun a:Int -> f a in 1") = LetRec ("f", TArrow (TInt, TInt), Fun ("a", TInt, App (ID "f", ID "a")), Int 1)
+(* This would infintitely recurse in evaluation, but for our optimizer, we still want it to have an output, so you do not need to worry about extending the environment of a recursive function. *)
+
+optimize [] (parse_expr "let rec f:(Int->Int) = fun a:Int -> if a < (10 + 2) then a else f (a - 1) in (5 * 6)") =
+      LetRec ("f", TArrow (TInt, TInt),
+       Fun ("a", TInt,
+        If (Binop (Less, ID "a", Int 12), ID "a",
+         App (ID "f", Binop (Sub, ID "a", Int 1)))),
+       Int 30)
+(* We still optimize the sub-expressions of a LetRec *)
+
 optimize [] (parse_expr ("0 * (1/0)")) 
 (* Exception: DivByZeroError *)
 ```
