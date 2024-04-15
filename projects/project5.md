@@ -34,8 +34,9 @@ Constant folding can make use of arithmetic identities. For example:
 
 * If `x` is numeric, the value of `0 * x` is zero, even if the compiler does not know the value of `x`.
 * If `x` is numeric, the value of `1 * x` is `x`.
+* If `x` is numeric, the value of `x + 0 - 0` is `x`.
 
-Note that there are more arithmetic identities you should implement. These are just a few!
+**Note that there are more arithmetic identities you should implement. These are just a few!**
 
 ### Constant propagation
 
