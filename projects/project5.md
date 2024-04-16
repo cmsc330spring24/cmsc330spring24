@@ -4,13 +4,6 @@
 > **Due**: April 23rd, 2024, 11:59PM (Late: April 24th, 2024, 11:59PM) \
 > **Points**: 50 public, 50 semipublic
 
-## Introduction
-
-In project 4, you implemented MicroCaml — a *dynamically-typed* version of OCaml with a subset of its features. In this project, you will implement:
-
-* An **optimizer** for MicroCaml, which simplifies the MicroCaml AST using constant folding and constant propagation
-* A **type checker** for MicroCaml, which verifies if a MicroCaml expression is well-typed before we run the code. If an expression passes the type checker, it will not cause type error when it runs.
-
 > [!IMPORTANT]
 > In order to utilize some of the new functionality built in to this project, you must install the following `opam` package(s):
 > 
@@ -18,33 +11,51 @@ In project 4, you implemented MicroCaml — a *dynamically-typed* version of OCa
 > opam install ppx_deriving
 > ```
 
-## Part (A): AST optimization
+
+## Introduction
+
+In project 4, you implemented MicroCaml — a *dynamically-typed* version of OCaml with a subset of its features. In this project, you will implement:
+
+* An **optimizer** for MicroCaml, which simplifies the MicroCaml AST using constant folding and constant propagation
+* A **type checker** for MicroCaml, which verifies if a MicroCaml expression is well-typed before we run the code. If an expression passes the type checker, it will not cause type error when it runs.
+
 
 ### What even is optimization?
 To dive into optimization we first need to understand the difference between *compiletime* and *runtime*. 
 In compiled languages such as OCaml, the compilation stage will use a lexer to tokenize the input, and a parser to parse those tokens into an AST. This AST is encoded in some sort of executable format.
-During runtime, the AST will be evaluated using the inputs given to the program.
+
+During *runtime*, the AST will be evaluated using the inputs given to the program.
+
 
 Suppose I have a program P as follows: `print(1 + 2)`
 When I compile this program, I will end up with an AST such as `Print( Binop( Add, Int 1, Int 2 ) )`
 Then, **every time** I run this program, the evaluator will need to add 1 and 2, and then print the result.
 
-> Well that seems kinda silly, the result of the addition will **always be the same**
+&nbsp;
+
+> Well that seems kinda silly, the result of the addition will **always be the same**!
+
 I agree, it doesnt depend on any external inputs. So lets Optimize it.
+
+&nbsp;
 
 The goal of Optimization is to take in an AST, and output an *eqivalent* AST that hopefully involves less calculations.
 An optimized version of P would be something like P' = `Print( Int 3 )` 
 Every time we run P', it immediately prints out 3 without needing to do any calculation. 
 
-> Well this is great, why dont we do it for all expressions!
+&nbsp;
+
+> Well this is great, why dont we do it for all expressions?
+
 Erm. Some expressions rely on values not known at *compiletime* such as `Print( 2 + 3 + GetInt() )`
 We can optimize the result of `2 + 3`, but since we do not know what Int will be given, we can not determine this during *compiletime*, and we need to rely on the evaluator to finish the computation during *runtime*
 Optimized result: `Print( Binop( Add, Int 5, GetInt ) )`
+&nbsp;
 
 > Yippee now we have more efficient AST's that require less computation every time we run them!
 
 
-### Now on to the project:
+## Part (A): AST optimization
 
 In the first part of this project, you will implement a function `optimize : expr environment -> expr -> expr`,  which can partially evaluate and simplify the AST, using the following optimizations:
 
