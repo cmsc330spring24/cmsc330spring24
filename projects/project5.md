@@ -73,7 +73,19 @@ Constant folding can make use of arithmetic identities. For example:
 * If `x` is numeric, the value of `1 * x` is `x`.
 * If `x` is numeric, the value of `x + 0 - 0` is `x`.
 
-**Note that there are more arithmetic identities you should implement. These are just a few!**
+Here's a complete list of arithmetic identities that you should implement:
+
+* `x + 0 = x` and `0 + x = x`
+* `x * 0 = 0` and `0 * x = 0`
+* `x * 1 = x` and `1 * x = x`
+* `x - 0 = x`
+* `x / 1 = x`
+* `0 / x = 0`
+
+Properties that we are NOT testing:
+
+* `0 - x = -x`
+* `x / x = 1`
 
 ### Constant propagation
 
@@ -92,7 +104,7 @@ let x = 42 in
 ```
 Continuing to propagate yields `1` . 
 
-You can assume all ASTs are well-typed and will not cause an error during the optimization.
+You can assume all ASTs are valid OCaml expressions and will not cause an error during the optimization.
 
 Your optimizer should evaluate as much as possible. For many programs, it will be able to optimize the AST down
 to just a single node containing the value returned after running the program.
@@ -100,7 +112,7 @@ to just a single node containing the value returned after running the program.
 > [!NOTE]
 > **How is this optimization different from the evaluator in Project 4?**
 > 
-> During evaluation, all variables are bound at some point (i.e. you can lookup the value of a variable in the environment). In the optimizer, variables may not be bound, but you'd still want to evaluate the expression as much as possible. For example, the optimizer will optimize `fun x-> 1+2+3+4+x` to `fun 10+x`, whereas the evaluator will evaluate it a closure with the body of the function unmodified.
+> During evaluation, all variables are bound at some point (i.e. you can lookup the value of a variable in the environment). In the optimizer, variables may not be bound, but you'd still want to evaluate the expression as much as possible. For example, the optimizer will optimize `fun x:Int -> 1+2+3+4+x` to `fun x:Int -> 10+x`, whereas the evaluator will evaluate it a closure with the body of the function unmodified.
 
 ### More examples of programs after optimization
 
@@ -134,12 +146,7 @@ optimize [] (parse_expr ("0 * (1/0)"))
 
 ## Part (B): Type Checker
 
-The main purpose of a type system in a programming language is to reduce possibilities for bugs in the programs due to type errors. In this part of the project, you will implement a type checker for MicroCaml. In particular, you will implement a function, `typecheck`. It takes in a typing environment `exptype environment`, and an AST `expr` as arguments, and type checks the expression in the given environment, returning an `exptype` if the expression passes the type checker. It throws a type error if the expression does not type check. For example:
-```ocaml
-  typecheck [] (parse_expr "1 + 2") => TInt
-  typecheck [] (parse_expr "2 >= 1") => TBool
-  typecheck [] (parse_expr "1 + true") => (* Exception: TypeError *)
-```
+The main purpose of a type system in a programming language is to reduce possibilities for bugs in the programs due to type errors. In this part of the project, you will implement a type checker for MicroCaml.
 
 ### AST
 
@@ -184,6 +191,72 @@ type expr =
   | LetRec of var * exptype * expr * expr
   | Record of (label * expr) list
   | Select of label * expr
+```
+
+### Subtyping (Optional Helper)
+
+Here we describe an optional helper that can be used in your typechecker:
+
+#### `is_subtype : exptype -> exptype -> bool`
+
+* **Description:** Takes two types `t1` and `t2` arguments, and returns `true` if `t1 <: t2`.
+
+If `S` is a subtype of `T`, written S <: T,then an `S` can be used anywhere a `T` is expected. Subtyping is an essential feature of the object-oriented programming languages. In this project, we will explore the subtyping with functions and immutable records.
+
+Example:
+```ocaml
+(* Int <: Int *)
+is_subtype (TInt) (TInt) = true
+(* Int <: Bool *)
+is_subtype (TInt) (TBool) = false
+(* {a=100} <: {a:100} *)
+is_subtype (TRec [(Lab "a", TInt)]) (TRec [(Lab "a", TInt)])  = true
+(* {a=100;b=true} <: {a:100} *)
+is_subtype (TRec [(Lab "a", TInt); (Lab "b", TBool)]) (TRec [(Lab "a", TInt)]) = true
+```
+
+#### Subtyping Rules
+$$ (T-SUB): \frac{\Gamma\vdash e:S, \space S <:T}{\Gamma\vdash e:T } $$
+
+$$ (S-REFL): {S <: S} $$
+$$ (T-TRANS): \frac{S <: U, \space U <: T}{S <:T} $$
+
+$$(S-RECWIDTH): \{l_i:T_i^{i \in 1..n+k}\} <: \{l_i:T_i^{i \in 1..n}\}$$
+
+Examples:
+```ocaml
+{x:Int, y:Int} <: {x:Int}
+{x:Int, y:Int, z:Bool} <: {x:Int}
+```
+
+$$(S-RECDEPTH): \frac{for\space each\space i\space \space S_i <: T_i}{\{l_i:T_i^{i \in 1..n}\} <: \{l_i:T_i^{i \in 1..n}\}} $$
+Example:
+```ocaml
+{x:{a:Int, b:Int}, y:{m:Int}} <: {x:{a:Int},y:{}}
+```
+$$(S-PERM): \frac{\{k_j:S_j^{j\in1..n}\} \space is\space a\space permutation\space of\space \{l_i:T_i^{i\in1..n}\}}{\{k_j:S_j^{j\in1..n}\} <:\{l_i:T_i^{i\in1..n}\}} $$
+
+Example:
+```ocaml
+{c:Unit,b:Bool,a:Int} <: {a:Int,b:Bool,c:Unit}
+{a:Int,b:Bool,c:Unit} <: {c:Unit,b:Bool,a:Int}
+```
+$$(S-ARROW): \frac{T_1 <: S_1, \space S_2 <: T_2}{S_1\rightarrow S_2 <: T_1 \rightarrow T_2} $$
+Example
+```ocaml
+(Animal → Cat) <: (Cat → Animal)
+```
+
+### Type Checker
+
+#### `typecheck : exptype environment -> expr -> exptype`
+
+* **Description:** Takes in a typing environment `exptype environment`, and an AST `expr` as arguments, and type checks the expression in the given environment, returning an `exptype` if the expression passes the type checker. 
+* **Exception:** Throws a `TypeError` if the expression does not type check. For example:
+```ocaml
+typecheck [] (parse_expr "1 + 2") => TInt
+typecheck [] (parse_expr "2 >= 1") => TBool
+typecheck [] (parse_expr "1 + true") => (* Exception: TypeError *)
 ```
 
 ### Type Checking Rules
@@ -307,53 +380,6 @@ Example:
 ```ocaml
 let rec fact:(Int->Int) = fun x:Int -> if x = 1 then 1 else x * fact (x - 1) in fact 3 
 Type = TInt
-```
-
-### Subtyping
-If `S` is a subtype of `T`, written S <: T,then an `S` can be used anywhere a `T` is expected. Subtyping is an essential feature of the object-oriented programming languages. In this project, we will explore the subtyping with functions and immutable records. You will implement a function `is_subtype : exptype -> exptype -> bool`, which takes two types `t1` and `t2` arguments, and returns `true` if `t1 <: t2`. 
-
-Example:
-```ocaml
-(* Int <: Int *)
-is_subtype (TInt) (TInt) = true
-(* Int <: Bool *)
-is_subtype (TInt) (TBool) = false
-(* {a=100} <: {a:100} *)
-is_subtype (TRec [(Lab "a", TInt)]) (TRec [(Lab "a", TInt)])  = true
-(* {a=100;b=true} <: {a:100} *)
-is_subtype (TRec [(Lab "a", TInt); (Lab "b", TBool)]) (TRec [(Lab "a", TInt)]) = true
-```
-
-#### Subtyping Rules
-$$ (T-SUB): \frac{\Gamma\vdash e:S, \space S <:T}{\Gamma\vdash e:T } $$
-
-$$ (S-REFL): {S <: S} $$
-$$ (T-TRANS): \frac{S <: U, \space U <: T}{S <:T} $$
-
-$$(S-RECWIDTH): \{l_i:T_i^{i \in 1..n+k}\} <: \{l_i:T_i^{i \in 1..n}\}$$
-
-Examples:
-```ocaml
-{x:Int, y:Int} <: {x:Int}
-{x:Int, y:Int, z:Bool} <: {x:Int}
-```
-
-$$(S-RECDEPTH): \frac{for\space each\space i\space \space S_i <: T_i}{\{l_i:T_i^{i \in 1..n}\} <: \{l_i:T_i^{i \in 1..n}\}} $$
-Example:
-```ocaml
-{x:{a:Int, b:Int}, y:{m:Int}} <: {x:{a:Int},y:{}}
-```
-$$(S-PERM): \frac{\{k_j:S_j^{j\in1..n}\} \space is\space a\space permutation\space of\space \{l_i:T_i^{i\in1..n}\}}{\{k_j:S_j^{j\in1..n}\} <:\{l_i:T_i^{i\in1..n}\}} $$
-
-Example:
-```ocaml
-{c:Unit,b:Bool,a:Int} <: {a:Int,b:Bool,c:Unit}
-{a:Int,b:Bool,c:Unit} <: {c:Unit,b:Bool,a:Int}
-```
-$$(S-ARROW): \frac{T_1 <: S_1, \space S_2 <: T_2}{S_1\rightarrow S_2 <: T_1 \rightarrow T_2} $$
-Example
-```ocaml
-(Animal → Cat) <: (Cat → Animal)
 ```
 
 ### Exceptions
