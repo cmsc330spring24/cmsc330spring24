@@ -82,6 +82,11 @@ Here's a complete list of arithmetic identities that you should implement:
 * `x / 1 = x`
 * `0 / x = 0`
 
+List of boolean identities that should also be implemented:
+
+* `true || x` and `x || true` is `true`
+* `false && x` and `x && false` is `false`
+
 Properties that we are NOT testing:
 
 * `0 - x = -x`
