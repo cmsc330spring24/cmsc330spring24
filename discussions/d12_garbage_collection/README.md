@@ -24,18 +24,12 @@ In lecture, we learned about three main ways to do garbage collection:
 
 ## Exercises
 
-Consider the following pseudocode snippet:
-
-```java
-String x1 = "hello"
-String x2 = &x1
-String x3 = "world"
-String x4 = "apple" + &x3
-```
-
-`String` allocates a string onto the heap. We can reference other strings on the heap by using the `&` operator, similar to how we create pointers in C / C++.
-
 ### Reference Counting
+
+Consider the following stack + heap layout:
+
+![](./imgs/ref_count.png)
+
 
 1. What would a reference counter diagram look like for this problem?
 2. What would the diagram look like after the variable `x4` is popped off the stack?
@@ -45,7 +39,7 @@ String x4 = "apple" + &x3
 
 Suppose we have the following layout for the stack and heap:
 
-<img src="./imgs/mark_sweep_1.png" width="100%">
+![](./imgs/mark_sweep.png)
 
 1. Indicate the freed segments of memory after one pass of Mark & Sweep.
 2. Remove the variable `x3` from the stack. What does the diagram look like now?
