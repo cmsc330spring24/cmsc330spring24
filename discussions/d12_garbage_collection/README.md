@@ -20,7 +20,7 @@ In lecture, we learned about three main ways to do garbage collection:
 
 * **Reference Counting** - Keep track of how many references point to a piece of memory, and free that memory once the counter reaches 0.
 * **Mark & Sweep** - Has two phases, mark and sweep. In the mark phase, we mark all chunks of memory reachable via the stack. In the sweep phase, we go through the heap and deallocate all non-marked (non-reachable) chunks of memory.
-* **Stop & Copy** - Similar to Mark & Sweep, but instead of freeing unreachable heap memory segments, we copy them to an alternate partition. Once a partition is completely freed from stack references, we swap to using that partition.
+* **Stop & Copy** - Similar to Mark & Sweep, but instead of freeing unreachable heap memory segments, we copy all reachable references to an alternate partition. Once all references are copied, we swap to using that partition.
 
 ## Exercises
 
