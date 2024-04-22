@@ -69,19 +69,16 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 > [!IMPORTANT]
 > `left` is YOUR output. `right` is the EXPECTED output.
 
-
-There is no equivalent to running `dune utop src` for this project.
-
-You can write your own tests: any function with the `#[test]`
-attribute, and any documentation tests are run automatically with the command `cargo test`.
-
-For this project, we include the public tests as unit tests in the bottom of your lib.rs file.
+For this project, the public tests are included as unit tests in the bottom of your lib.rs file.
 
 Rust also supports documentation tests. We have included one example above `gauss()`. These are tests within the comments above functions.
 The Rust Book is a great resource if you would like more information about [how document/unit tests work](https://doc.rust-lang.org/stable/cargo/commands/cargo-test.html).
 
-You can also try your Rust code online at <https://play.rust-lang.org/>.
+You can write your own tests: Any function with the `#[test]`
+attribute, and any documentation tests are run automatically with the command `cargo test`. You can use the doctest example in `gauss()` or the example `student_test1()` function to see the syntax.
 
+
+Rust does not have a toplevel repl similar to `utop`, but you can try your Rust code online at <https://play.rust-lang.org/>.
 
 
 Remember that Rust has print statements that will appear in the console.
