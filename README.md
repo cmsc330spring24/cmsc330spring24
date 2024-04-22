@@ -8,6 +8,7 @@
   + [Project 3](https://classroom.github.com/a/saUIBPo1) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project3.md))
   + [Project 4](https://classroom.github.com/a/CAp5Hv-a) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project4.md))
   + [Project 5](https://classroom.github.com/a/N4cunlnp) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project5.md))
+  + [Project 6](https://classroom.github.com/a/LYfmWiyr) ([README](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/projects/project6.md))
     
 ## Discussion links
   + [Discussion 1 - Introduction to Git](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d1_git)
