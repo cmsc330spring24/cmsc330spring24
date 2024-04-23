@@ -379,7 +379,7 @@ Example:
 let x = 2 * 3 + 4 in x - 5
 Type = TInt
 ```
-$$ (letrec): \frac{\Gamma\vdash e_1:\tau',\tau=\tau', \space\Gamma, x:\tau' \vdash e_2:\tau_2}{\Gamma\vdash (let\space rec \space x: \tau= e_1 \space in\space e_2):\tau_2 } $$
+$$ (letrec): \frac{\Gamma, x:\tau \vdash e_1:\tau',\tau=\tau', \space\Gamma, x:\tau' \vdash e_2:\tau_2}{\Gamma\vdash (let\space rec \space x: \tau= e_1 \space in\space e_2):\tau_2 } $$
 
 Example:
 ```ocaml
