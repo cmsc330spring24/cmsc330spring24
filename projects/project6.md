@@ -126,9 +126,7 @@ You should perform the following operations:
 - Create a new [`Vec`](https://doc.rust-lang.org/std/vec/struct.Vec.html) with
   the same elements as the slice, but repeated twice. For example, `[1, 3, 2]`
   should become `[1, 1, 3, 3, 2, 2]`.
-- If the vector ends up having 5 entries, take the second (index 1) element of the **slice**, and add it onto the fifth (index 4) element of the **vec**. Thus, using the same example as above, 
-  `[1, 1, 3, 3, 2, 2]` becomes `[1, 1, 3, 3, 5, 2]`
-- Return the vec.
+- If the vector ends up having 5 or more entries, take the second number in the **slice** and add it to the fifth number in the **vec**. Thus, our previous example `[1, 1, 3, 3, 2, 2]` becomes `[1, 1, 3, 3, 5, 2]`
 
 #### Examples
 
