@@ -1,8 +1,9 @@
 # Project 7: Vending Machine
 
-Due: ?
-
-Points: ?
+>[!IMPORTANT]
+> **Due**: 9/5/2024 at 2359
+> 
+> **Points**: 30 public, 50 semipublic, 20 secret
 
 ## Project Files
 
@@ -17,7 +18,13 @@ Points: ?
 
 In order to compile the project, simply run `cargo build`. To test, run
 `cargo test` in the root directory of the project. The tests won't run if any
-part of the project does not compile.
+part of the project does not compile. 
+
+## Ground Rules
+
+This is an individual assignment. You may use functions found in Rust's standard
+library. You may write any helper functions that you wish. You may also use the [`regex` crate](https://docs.rs/regex/latest/regex/).
+You may not use `unsafe`.
 
 ## Vending Machine
 
