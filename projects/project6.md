@@ -262,6 +262,11 @@ cat   ; cats are not snacks
 chips ; 20c
 ```
 
+```text
+;meow.txt (this is a valid file)
+here  kittykitty; 1c
+```
+
 Given this file, your function will read through the information and create a
 `HashMap`. In this, you will store the string representing the item's name, as
 well as the integer representing its price. If a file is empty, or contains just
