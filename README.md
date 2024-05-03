@@ -24,6 +24,8 @@
   + [Discussion 10 - Operational Semantics & Type Checking](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d10_opsem)
   + [Discussion 11 - Lambda Calculus](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d11_lambda_calc)
   + [Discussion 12 - Garbage Collection](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d12_garbage_collection)
+  + Discussion 13 - Quiz #4 (no readme)
+  + [Discussion 14 - Rust](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d14_rust)
 
 ## Review session links
   + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/review/review1.md)
