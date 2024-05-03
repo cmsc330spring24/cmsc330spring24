@@ -6,6 +6,7 @@
 - Final Exam **Monday, May 13th @ 4-6PM**
   - Logistics & Room Assignments (based on last name): [@2074](https://piazza.com/class/lrf5qvp042i1y2/post/2074)
   - Final review session **next Wednesday, May 8th, 6-8:30PM @ Antonov**: [@2100](https://piazza.com/class/lrf5qvp042i1y2/post/2100)
+- Fill out [Course Evaluations](http://courseexp.umd.edu/) by **Friday, May 10**.
 
 ## Exercises
 
