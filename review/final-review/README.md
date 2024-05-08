@@ -1,4 +1,4 @@
-# Exam 2 Review Session
+# Final Review Session
 
 ## RUST
 
@@ -223,12 +223,22 @@ Implement the `Drop` and `Deref` traits
 ### OpSem
 - Goal of operational semantics
     - give meaning to the language
-        - 3 major ways to give meaning in a language in PL theory
-            - Denotations: describe meaning via mathematical constructs
-            - Operational: describe meaning via how something operates
-            - Axiomatic: describing meanings via axioms
+        - specifically how we are allowed to use it / how it operates
+        - symbols are arbitrary: could define ? as adding numbers together, ex 4?3 -> 7
     - prove the correctness of a program
-        - does the program run how we expect it to run?
+        - does the program run how we expect it to run? in other words, does it follow the rules given to us?
+
+- Target language: language we're talking about - used in conclusion on bottom part of rule
+    - structure could be defined using a CFG like in project 4
+- Meta language: language we're using to describe the target language - used in premises on top part of rule
+    - working with its types and semantics when evaluating
+
+- Axiom: a conclusion or rule that is known to be true - has line on top
+    - a number always evaluates to itself, "false" is "false"
+- For an expression, build a proof from the bottom up
+    - each subexpression eventually should evaluate to one defined by an axiom
+    - can nest rules to derive new expressions
+- mappings from variables to values stored in environment, lookup to get them
 - Examples!
 
 ### Type Checking
