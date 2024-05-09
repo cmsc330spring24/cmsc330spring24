@@ -1,5 +1,5 @@
 # Final Review Session
-
+[Zoom Recording](https://umd.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1eef635f-86cc-4675-863e-b16b003ff2e2)
 ## RUST
 
 ### [Cliff’s Notes](https://bakalian.cs.umd.edu/assets/notes/rust.pdf) & [Rust Book](https://doc.rust-lang.org/book/title-page.html)
