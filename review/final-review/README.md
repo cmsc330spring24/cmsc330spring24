@@ -311,9 +311,9 @@ Write an expression for each of the following types.
 ```ocaml
 int -> string -> bool
 
-(‘a -> ‘b) -> ‘a -> ‘c -> ‘b
+('a -> 'b) -> 'a -> 'c -> 'b
 
-‘a -> ‘a -> ‘a
+'a -> 'a -> 'a
 
-(‘a * ‘b) -> (‘a -> ‘b -> ‘c) -> ‘c -> bool list
+('a * 'b) -> ('a -> 'b -> 'c) -> 'c -> bool list
 ```
