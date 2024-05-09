@@ -296,7 +296,7 @@ Implement the `Drop` and `Deref` traits
 
 Functional programming aims to bring programming as close to math as possible. Do everything by applying and composing functions
 rather than sequencing statements that update some state like imperative programming. Example: loops require updating the iteration
-variable state, so we replace it with recursion. 
+variable state, so we replace it with recursion. Lambda calculus is the basis for many functional languages.
 
 Type inference is what OCaml and many functional languages do: given an expression, figure out a valid type. Type checking is given
 an expression (and sometimes the programmer-provided type annotation), figure out if the expression is valid according to the typing rules. Type checking can happen at compile-time (statically) or at runtime (dynamically).
