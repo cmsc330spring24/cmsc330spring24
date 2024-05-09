@@ -292,4 +292,28 @@ Implement the `Drop` and `Deref` traits
        ![kleene closure](https://github.com/umd-cmsc330/spring24-ta/assets/100861119/2c1266b2-795b-40c2-b896-43730eb432d1)
 - Problems!
     -Here's a solution doc link to the problems we will be discussing during the review session! **Please don't make any edits to the document since they will be reflected in the document for everyone else** --> https://share.goodnotes.com/s/ts1aGyPcLJkBMajqEdTBqy
-## PL Concepts & OCaml Typing
+## OCaml Typing
+
+Give the type of each of the following or if there is a type error.
+```ocaml
+let f g = (g 1, g "hi") in f (fun x -> x)
+
+let f p x y = map (p x) y
+
+fun x a -> x :: [x+1]::a
+
+fun x a -> (x a) :: a :: ["cmsc330"]
+
+let f = let m = ref 0 in fun n -> m := n; !m + n
+```
+
+Write an expression for each of the following types.
+```ocaml
+int -> string -> bool
+
+(‘a -> ‘b) -> ‘a -> ‘c -> ‘b
+
+‘a -> ‘a -> ‘a
+
+(‘a * ‘b) -> (‘a -> ‘b -> ‘c) -> ‘c -> bool list
+```
