@@ -28,7 +28,9 @@
   + [Discussion 14 - Rust](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/discussions/d14_rust)
 
 ## Review session links
-  + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/blob/main/review/review1.md)
+  + [Exam 1 Review](https://github.com/cmsc330spring24/cmsc330spring24/tree/main/review/review1)
+  + [Exam 2 Review](https://github.com/cmsc330spring24/cmsc330spring24/tree/main/review/review2)
+  + [Final Review](https://github.com/cmsc330spring24/cmsc330spring24/tree/main/review/final-review)
 
 ## Additional Resources
   + [OCaml Problem Generator - Type to Expr](https://nmittu.github.io/330-problem-generator/type_of_expr.html)
